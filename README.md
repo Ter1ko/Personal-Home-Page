@@ -1,5 +1,3 @@
-# Personal-Home-Page
-
 # Alice's Portfolio Website
 
 一个优雅的个人作品集网站，使用 Next.js 13+ 和 TypeScript 构建。
