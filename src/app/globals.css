@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Fiolex Girls';
+  src: url('/fonts/FiolexGirls.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --alice-primary: #A9EED1;
+  --alice-secondary: #7ED4E6;
+  --alice-accent: #4A90E2;
+  --alice-text: #2C7A7B;
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, 
+    rgba(169, 238, 209, 0) 0%,
+    rgba(169, 238, 209, 0.01) 5%,
+    rgba(169, 238, 209, 0.03) 10%,
+    rgba(169, 238, 209, 0.05) 15%,
+    rgba(169, 238, 209, 0.07) 20%,
+    rgba(169, 238, 209, 0.09) 25%,
+    rgba(169, 238, 209, 0.11) 30%,
+    rgba(169, 238, 209, 0.13) 35%,
+    rgba(169, 238, 209, 0.15) 40%,
+    rgba(169, 238, 209, 0.15) 100%
+  );
+  color: var(--alice-text);
+  font-family: 'Playfair Display', serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .transform-gpu {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+}
+
+/* 3D变换相关样式 */
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* 动画相关样式 */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* 玻璃态效果 */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 4px solid rgba(108, 199, 255, 0.2);
+  box-shadow: 
+    0 8px 32px 0 rgba(108, 199, 255, 0.2),
+    inset 0 0 20px rgba(108, 199, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.glass-effect:hover {
+  border-color: rgba(108, 199, 255, 0.3);
+  box-shadow: 
+    0 8px 32px 0 rgba(108, 199, 255, 0.3),
+    inset 0 0 30px rgba(108, 199, 255, 0.2);
+}
+
+.glass-effect::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    rgba(108, 199, 255, 0.2) 0%,
+    transparent 50%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.glass-effect:hover::before {
+  opacity: 1;
+}
+
+/* 光效 */
+.light-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.light-effect::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    rgba(108, 199, 255, 0.3) 0%,
+    transparent 50%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.light-effect:hover::after {
+  opacity: 1;
+}
+
+/* 渐变边框 */
+.gradient-border {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(45deg, #49d2c7, #52bdfe);
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.gradient-border:hover::before {
+  opacity: 1;
+}
+
+/* 动画效果 */
+@keyframes lightMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.light-animation {
+  animation: lightMove 8s ease-in-out infinite;
+}
+
+/* 页面过渡 */
+.page-transition {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.page-transition.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 背景渐变效果 */
+.bg-gradient-alice {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-gradient-alice.visible {
+  opacity: 1;
+}
+
+/* 主页面背景 */
+.bg-main {
+  position: relative;
+  z-index: 0;
+}
