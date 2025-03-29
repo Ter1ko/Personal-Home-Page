@@ -6,13 +6,17 @@
 
 ### 主要特点
 
-- 🎨 现代化的 UI 设计
+- � 现代化的 UI 设计
 - 🌟 流畅的页面过渡动画
 - 🎮 3D 交互效果
 - 📱 完全响应式设计
 - ⚡ 基于 Next.js 13+ 的快速加载
 - 🎯 SEO 优化
++ 🎭 优雅的加载动画
++ 💫 玻璃态设计效果
++ 🌈 渐变色和光效
 
+  
 ## 技术栈
 
 ### 核心框架
@@ -29,12 +33,23 @@
 - TailwindCSS - 样式框架
 - ESLint - 代码规范
 - PostCSS - CSS 处理
++ - Framer Motion - 页面动画
++ - Three.js - 3D 渲染
 
 ## 环境要求
 
 - Node.js 18.0.0 或更高版本
 - npm 9.0.0 或更高版本
 
+## 浏览器支持
+
+- Chrome (推荐)
+- Firefox
+- Safari
+- Edge
+- Opera
+
+  
 ## 安装步骤
 
 1. 克隆项目到本地：
@@ -47,6 +62,12 @@ cd alice-portfolio
 ```bash
 npm install
 ```
+
+3. 配置环境变量：
+```bash
+cp .env.example .env.local
+```
+
 
 ## 运行项目
 
@@ -95,6 +116,23 @@ alice-portfolio/
 └── README.md            # 项目说明文档
 ```
 
+## 开发指南
+
+### 代码规范
+- 使用 ESLint 进行代码检查
+- 遵循 TypeScript 严格模式
+- 使用 Prettier 进行代码格式化
+
+### 提交规范
+- feat: 新功能
+- fix: 修复问题
+- docs: 文档修改
+- style: 代码格式修改
+- refactor: 代码重构
+- test: 测试用例修改
+- chore: 其他修改
+
+  
 ## 功能模块
 
 ### 首页
@@ -125,6 +163,15 @@ alice-portfolio/
    - 使用最新版本的 Node.js
    - 清理浏览器缓存
    - 检查是否有过多的浏览器扩展
+  
+5. 如果遇到字体加载问题，请确保：
+   - 检查字体文件是否正确放置在 public/fonts 目录下
+   - 检查字体文件格式是否支持
+
+6. 如果遇到动画性能问题：
+   - 检查设备性能
+   - 考虑降低动画复杂度
+   - 使用 CSS transform 代替位置动画
 
 ## 性能优化
 
@@ -160,11 +207,30 @@ alice-portfolio/
 
 MIT License
 
+### 使用条款
+- 可以自由使用、修改和分发
+- 必须包含原始许可证和版权声明
+- 不提供任何担保
+
 ## 联系方式
 
 - 邮箱：liketeriko@gmail.com
 - GitHub：[你的GitHub主页](https://github.com/Ter1ko)
 
+
+## 更新计划
+
+### v1.1.0 (计划中)
+- [ ] 添加深色模式
+- [ ] 优化移动端体验
+- [ ] 添加更多交互动画
+- [ ] 支持多语言
+
+
 ## 致谢
 
 感谢所有为这个项目提供帮助和建议的贡献者！
+- [Next.js](https://nextjs.org/) - 优秀的 React 框架
+- [TailwindCSS](https://tailwindcss.com/) - 强大的 CSS 框架
+- [Framer Motion](https://www.framer.com/motion/) - 流畅的动画库
+- [Three.js](https://threejs.org/) - 强大的 3D 库
