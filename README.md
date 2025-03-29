@@ -1,9 +1,5 @@
 # Alice Portfolio
 
-<div align="center">
-  <img src="public/preview.png" alt="项目预览" width="800"/>
-</div>
-
 ## 项目介绍
 
 这是一个现代化的个人作品集网站，采用 Next.js 14 构建，结合了 3D 效果和流畅的动画展示。网站具有响应式设计，可以在各种设备上完美展示。
@@ -16,7 +12,6 @@
 - 📱 完全响应式设计
 - ⚡ 基于 Next.js 14 的快速加载
 - 🎯 SEO 优化
-- 🌙 深色/浅色主题支持
 
 ## 技术栈
 
@@ -167,9 +162,8 @@ MIT License
 
 ## 联系方式
 
-- 邮箱：你的邮箱
-- GitHub：[你的GitHub主页](https://github.com/你的用户名)
-- 个人网站：[你的个人网站](https://你的网站)
+- 邮箱：liketeriko@gmail.com
+- GitHub：[你的GitHub主页](https://github.com/Ter1ko)
 
 ## 致谢
 
