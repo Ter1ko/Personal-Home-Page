@@ -215,7 +215,7 @@ MIT License
 ## 联系方式
 
 - 邮箱：liketeriko@gmail.com
-- GitHub：[你的GitHub主页](https://github.com/Ter1ko)
+- GitHub：[Ter1ko的GitHub主页](https://github.com/Ter1ko)
 
 
 ## 更新计划
