@@ -1,135 +1,36 @@
-# Alice's Portfolio Website
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-一个优雅的个人作品集网站，使用 Next.js 13+ 和 TypeScript 构建。
+## Getting Started
 
-## 技术栈
+First, run the development server:
 
-- **框架**: Next.js 13+ (App Router)
-- **语言**: TypeScript
-- **样式**: Tailwind CSS
-- **动画**: Framer Motion
-- **字体**: Fiolex Girls (自定义字体)
-
-
-## 主要功能
-
-### 1. 响应式设计
-- 完美适配各种屏幕尺寸
-- 移动端优先的设计理念
-- 流畅的布局切换
-
-### 2. 动画效果
-- 平滑的页面过渡
-- 卡片悬浮动画
-- 内容展示动画
-- 背景光效动画
-
-### 3. 交互体验
-- 毛玻璃效果
-- 卡片放大展示
-- 平滑滚动
-- 优雅的导航切换
-
-### 4. 页面组件
-- 首页展示
-- 相机标定项目
-- 美赛E题项目
-- 技能展示
-- 作品展示
-
-## 代码质量
-
-### 1. 类型安全
-- 使用 TypeScript 确保类型安全
-- 完善的类型定义
-- 接口设计规范
-
-### 2. 组件设计
-- 模块化组件结构
-- 高复用性设计
-- 清晰的逻辑分离
-
-### 3. 性能优化
-- Next.js 图片优化
-- 组件懒加载
-- CSS 动画优化
-- 状态管理优化
-
-## 特色亮点
-
-### 1. 视觉设计
-- 自定义字体 "Fiolex Girls"
-- 优雅的渐变背景
-- 现代简约的设计风格
-
-### 2. 动画实现
-- 使用 Framer Motion 实现复杂动画
-- 流畅的过渡效果
-- 自然的交互反馈
-
-### 3. 用户体验
-- 直观的导航系统
-- 流畅的页面切换
-- 优雅的动画效果
-
-## 可改进空间
-
-1. **错误处理**
-   - 添加全局错误边界
-   - 完善错误提示机制
-
-2. **性能优化**
-   - 优化图片加载策略
-   - 实现更细粒度的代码分割
-
-3. **功能扩展**
-   - 添加更多页面过渡动画
-   - 增加更多交互反馈
-   - 添加深色模式支持
-
-4. **开发体验**
-   - 添加单元测试
-   - 完善开发文档
-   - 添加自动化部署
-
-## 本地开发
-
-1. 克隆项目
-```bash
-git clone [repository-url]
-```
-
-2. 安装依赖
-```bash
-npm install
-# 或
-yarn install
-```
-
-3. 启动开发服务器
 ```bash
 npm run dev
-# 或
+# or
 yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-4. 构建生产版本
-```bash
-npm run build
-# 或
-yarn build
-```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 部署
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-项目可以轻松部署到 Vercel 平台：
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-1. 推送代码到 GitHub
-2. 在 Vercel 导入项目
-3. 自动部署完成
+## Learn More
 
-## 贡献
+To learn more about Next.js, take a look at the following resources:
 
-欢迎提交 Issue 和 Pull Request 来帮助改进项目。
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
